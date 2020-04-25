@@ -1,2 +1,3 @@
 from tasks import add
-add.delay(4,5)
+result = add.delay(4,5)
+print(str(result.get(timeout=1)))
